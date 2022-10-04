@@ -16,3 +16,35 @@
         System.out.println(s2.class_);
     }
 }
+
+class Animal{
+    String name;
+    int age;
+    String colour;
+
+    // CONSTRUCTOR
+    public Animal(String name, int age, String colour){
+        this.name = name;
+        this.age = age;
+        this.colour = colour;
+    }
+
+    // METHODS
+    public String getName(){
+        return this.name;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public String getColour(){
+        return this.colour;
+    }
+
+    public static void main(String[] args){
+        Animal animal = new Animal("Rex", 12, "white");
+        System.out.println(animal.name);
+        System.out.println(animal.age);
+        System.out.println(animal.colour);
+    }
+
+}
